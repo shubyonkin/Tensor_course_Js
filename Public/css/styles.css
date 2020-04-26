@@ -1,0 +1,265 @@
+body{
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 900px;
+}
+#wraper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 900px;
+}
+
+    header {
+        margin: 40px 0px;
+    }
+
+    header .title img {
+        height: 30px;
+    }
+
+
+    header .title span {
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    header .title span:after {
+        content: '';
+        display: block;
+        border-top: 3px solid #000;
+        width: 200px;
+        margin: 20px auto;
+    }
+    header .title p {
+        margin-top: 30px;
+    }
+
+#wraper1 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava01 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+    .ava01 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top:30px;
+    }
+
+    .ava01 p {
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava01 span {
+        font-size: 0.7em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0ad;
+    }
+
+    .ava01:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        transform: scale(1.1);
+    }
+
+#wraper2 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava02 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+
+    .ava02 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .ava02 p {
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava02 span {
+        font-size: 0.7em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0ad;
+    }
+
+    .ava02:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        transform: scale(1.1);
+    }
+#wraper3 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava03 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+    .ava03 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top:30px;
+    }
+
+    .ava03 p {
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava03 span {
+        font-size: 0.7em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0ad;
+    }
+
+    .ava03:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        transform: scale(1.1);
+    }
+
+#wraper4 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava04 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+
+    .ava04 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .ava04 p {
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava04 span {
+        font-size: 0.7em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0ad;
+    }
+
+    .ava04:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        transform: scale(1.1);
+    }
+#wraper5 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava05 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+    .ava05 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top:30px;
+    }
+
+    .ava05 p {
+        font-size: 1em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava05 span {
+        font-size: 0.7em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0ad;
+    }
+
+    .ava05:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        transform: scale(1.1);
+    }
+
+#wraper6 {
+    width: 30%;
+    display: inline-block;
+}
+
+    .ava06 {
+        transition: .2s linear;
+        border-radius: 10px;
+        color:white;
+    }
+    .ava06 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .ava06 p {
+        font-size: 1.2em;
+        position: relative;
+        bottom: 20px;
+        font-weight: 400;
+        color:black;
+    }
+
+    .ava06 span {
+        font-size: 0.8em;
+        position: relative;
+        bottom:40px;
+        color: #c0c0c0;
+    }
+
+    .ava06:hover {
+        box-shadow: 0 0 4px 2px white, 0 0 0 4px #c0c0c0;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
