@@ -3,7 +3,6 @@ import {School} from './School.js';
 // проинициализируем фабрику
 //const factory = new Factory();
 let fabric = new Fabric();
-console.log('1');
 // создадим школу (если есть для нее фабрика, то тоже через фабрику) 
 let school = new School(fabric);
 // добавим в список школы студентов используйте те данные, которые у вас есть
