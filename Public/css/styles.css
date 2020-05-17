@@ -1,83 +1,15 @@
 body {
-    text-align: center;
     font-size: 18px;
     font-family: sans-serif;
-    margin: 0 auto;
-    width: 1500px;
+    margin: 0 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#wraper {
-    max-width: 900px;
-    margin: 0 auto;
-    width: 900px;
+.Students{
+    display: block;
+ 
 }
-
-    header {
-        margin: 40px 0px;
-    }
-
-    header .title img {
-        height: 30px;
-    }
-
-
-    header .title span {
-        font-size: 40px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-    }
-
-    header .title span:after {
-        content: '';
-        display: block;
-        border-top: 3px solid #000;
-        width: 100px;
-        margin: 20px auto;
-    }
-    header .title p {
-        margin-top: 30px;
-    }
-
-    .ava{
-        display: inline-block;
-        width: 25%;
-        transition: .2s linear;
-        border-radius: 10px;
-        color:white;
-    }
-    .ava img{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 50%;
-        margin-top: 10px;
-    }
-    .ava span{
-        font-size: 0.8em;
-        position: relative;
-        bottom:40px;
-        color: #c0c0c0;
-    }
-    .ava p{
-        font-size: 1.2em;
-        position: relative;
-        bottom: 20px;
-        font-weight: 400;
-        color:black;
-
-    }
-    .card{
-        border: 5px solid black;
-         width: 400px;
-         object-fit: cover;
-        border-radius: 10%;
-        display: inline-block;
-        margin: 1em;
-
-    }
-    .card img{
-        width: 300px auto;
-        height: 200px;
-    }
-    #Name{
-        font-size: 30px;
-    }
+.Teachers{
+    display: block;
+}
