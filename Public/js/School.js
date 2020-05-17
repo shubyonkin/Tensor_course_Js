@@ -1,5 +1,3 @@
-
-
 export class School{
     constructor(fabric){
         this.fabric = fabric;
