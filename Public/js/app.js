@@ -1,22 +1,66 @@
-import {Fabric} from "./PersonLib.js";
-import {School} from './School.js';
-// проинициализируем фабрику
-//const factory = new Factory();
-let fabric = new Fabric();
-// создадим школу (если есть для нее фабрика, то тоже через фабрику) 
-let school = new School(fabric);
-// добавим в список школы студентов используйте те данные, которые у вас есть
-// Vasia и пр. тут скорее для примера
-// если методы называются по другому, поменяйте
-// по желанию можно добавить больше
-school.addStudent('Антон Кабанов');
-school.addStudent('Елена Киселёва');
-school.addTeacher('Борис Вячеславович Сидоров');
+import {Header,ComponentFactory,PersonList,PopupStack} from './componentLib.js';
 
-// отрисуем всех студентов в dom 
-// если методы называются по другому, поменяйте
-// точка монтирования document.body может быть изменена на любой другой элемент DOM
-let layout = school.appendToDOM(document.body);
 
-// в итоге в на странице должны получить список студентов и учителей
-// папка js будет содержать несколько файлов, минимум 3, а лучше больше
+const stack = new PopupStack();
+
+const factory = new ComponentFactory();
+
+const head = factory.create(Header, {
+   title: 'Tensor Scool',
+   description: 'Это страница школы Тензор. Тут вы можете познакомиться с нашими учениками и посмотреть темы занятий.'
+});
+
+head.mount(document.body);
+const list = factory.create(PersonList);
+list.mount(document.body);
+stack.mount(document.body);
+
+class Model {
+   constructor(data) {
+      for(let key in data) {
+         this[key] = data[key];
+      }
+   }
+
+   get fullName() {
+      return `{this.title}`;
+   }
+}
+
+let personModelList = 
+[new Model({
+   title: 'Женя Серова',
+   photo: 'img/ava03.jpg',
+   study: 'Угату',
+   bday: new Date('1998-11-13'),
+   phone: '+7 (963) 123-45-67',
+   active: new Date('2020-04-03T20:00:00'),
+   popupStack: stack 
+}),
+new Model({
+   title: 'Полина Гришина',
+   photo: 'img/ava02.jpg',
+   study: 'Угату',
+   bday: new Date('1998-11-13'),
+   phone: '+7 (963) 123-45-67',
+   active: new Date('2020-04-03T20:00:00'),
+   popupStack: stack 
+}),
+new Model({
+   title: 'Дмитрий Дмитриевич',
+   photo: 'img/ava01.jpg',
+   study: 'Угату',
+   bday: new Date('1998-11-13'),
+   phone: '+7 (963) 123-45-67',
+   active: new Date('2020-04-03T20:00:00'),
+   popupStack: stack 
+}),
+
+];
+
+
+for(let i=0;i<personModelList.length;i++){
+   list.add(personModelList[i]);
+}
+
+
